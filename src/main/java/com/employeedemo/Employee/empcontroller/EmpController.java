@@ -13,18 +13,15 @@ public class EmpController {
     @Autowired
     private EmpService empService;
 
-//    @GetMapping("/view")
+    //    @GetMapping("/view")
 //    public List<Employee> viewemployee()
 //    {
 //        return empService.viewEmployee();
 //    }
     @PostMapping("/insert")
-    public Employee insert(@RequestBody Employee employee)
-    {
+    public Employee insert(@RequestBody Employee employee) {
 
-        return  empService.viewEmployee(employee);
+        return empService.viewEmployee(employee);
     }
-
-    //checking
 
 }
